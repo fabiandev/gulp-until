@@ -2,7 +2,8 @@
 
 This package evaluates a function until it returns `true` to go to the next pipe.  
 
-> A true-ish return value like `1` or `{}` would *not* trigger the next pipe. It has to be `true` explicitly or anything else to continue the check.
+> A true-ish return value like `1` or `{}` would *not* trigger the next pipe.  
+> The function has to explicitly return `true` or `false`.
 
 # Installation
 
