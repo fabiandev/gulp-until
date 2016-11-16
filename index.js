@@ -44,10 +44,8 @@ function check(func, wait, file, cb) {
   }
 
   timeout = setTimeout(function() {
-    check(func, cb);
+    check(func, wait, file, cb);
   }, wait);
-
-  return;
 }
 
 function error(message) {
