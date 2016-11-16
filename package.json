@@ -1,0 +1,30 @@
+{
+  "name": "gulp-until",
+  "version": "0.0.1",
+  "description": "Wait for an evaluation function to become true in your gulp pipe.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fabiandev/gulp-until.git"
+  },
+  "keywords": [
+    "gulp",
+    "wait",
+    "while",
+    "until",
+    "pipe"
+  ],
+  "author": "Fabian Pirklbauer",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/fabiandev/gulp-until/issues"
+  },
+  "homepage": "https://github.com/fabiandev/gulp-until#readme",
+  "dependencies": {
+    "gulp-util": "^3.0.7",
+    "map-stream": "^0.0.6"
+  }
+}
