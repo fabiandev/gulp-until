@@ -34,7 +34,7 @@ Or also give gulp-util a custom time to wait between checks.
 ```js
   return gulp.src(config.src)
     .pipe({
-      wait: 800 // ms to wait between checks.
+      wait: 800, // ms to wait between checks.
       check: function {
         // Again the evaluation function.
       }
