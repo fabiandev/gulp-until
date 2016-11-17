@@ -20,6 +20,8 @@ $ yarn add gulp-until --dev
 Either pass a function directly:
 
 ```js
+  import until from 'gulp-until';
+
   return gulp.src(config.src)
     .pipe(until(() => {
       // Once this function returns true for the first time,
@@ -27,15 +29,18 @@ Either pass a function directly:
     }))
     .pipe(gulp.dest(config.dest));
 ```
+> The example above uses the ES6 syntax.
 
-Or also give gulp-util a custom time to wait between checks.  
+Or additionally give gulp-util a custom time to wait between checks.  
 `Default: 100`
 
 ```js
+  var until = require('gulp-until');
+
   return gulp.src(config.src)
-    .pipe({
+    .pipe(until({
       wait: 800, // ms to wait between checks.
-      check: function {
+      check: function() {
         // Again the evaluation function.
       }
     }))
