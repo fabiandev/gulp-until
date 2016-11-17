@@ -40,7 +40,7 @@ function check(func, wait, file, cb) {
   }
 
   if (condition !== false) {
-    return(cb(error('The evaluation function has to explicitly return true or false.')));
+    return cb(error('The evaluation function has to explicitly return true or false.'));
   }
 
   timeout = setTimeout(function() {
