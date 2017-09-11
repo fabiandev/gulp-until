@@ -31,7 +31,7 @@ Either pass a function directly:
 ```
 > The example above uses the ES6 syntax.
 
-Or additionally give gulp-util a custom time to wait between checks.  
+Or additionally give gulp-until a custom time to wait between checks.  
 `Default: 100`
 
 ```js
